@@ -1,98 +1,31 @@
-/* styles.css */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card">
+        <div class="image-container">
+            <img src="profile-image.jpg" alt="Profile Image">
+        </div>
+        <div class="content">
+            <h2>Saurabh Saini</h2>
+            <p class="role">Product Designer at <a href="#">Cedcoss</a></p>
+            <p class="helping">Helping with:</p>
+            <div class="tags">
+                <span>UX/UI design</span>
+                <span>Product Designing</span>
+                <span>Copywriting</span>
+            </div>
+            <div class="buttons">
+                <button class="book">Book a lecture</button>
+                <button class="learn">Learn more</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #1c1c1c;
-    font-family: Arial, sans-serif;
-    margin: 0;
-}
-
-.card {
-    display: flex;
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    width: 700px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.image-container {
-    width: 40%;
-    background: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.image-container img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.content {
-    width: 60%;
-    padding: 20px;
-}
-
-h2 {
-    margin: 0;
-    font-size: 24px;
-    color: #333;
-}
-
-.role {
-    font-size: 16px;
-    color: #777;
-}
-
-.role a {
-    color: #0047ab;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.helping {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #666;
-}
-
-.tags {
-    margin-top: 10px;
-}
-
-.tags span {
-    background: #e0e0e0;
-    padding: 5px 10px;
-    border-radius: 20px;
-    margin-right: 5px;
-    font-size: 14px;
-}
-
-.buttons {
-    margin-top: 20px;
-}
-
-button {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-.book {
-    background: #002b5b;
-    color: white;
-    margin-right: 10px;
-}
-
-.learn {
-    background: white;
-    border: 1px solid #002b5b;
-    color: #002b5b;
-}
